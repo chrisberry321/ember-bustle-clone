@@ -1,0 +1,11 @@
+{{outlet}}
+<h1>this is the app/temp/index.hbs</h1>
+
+<div class="article">
+  <ul>
+    {{#each model as | article|}}
+      <li>{{article.author}} {{article.image}} {{article.title}}</li>
+      {{/each}}
+  </ul>
+
+</div>
