@@ -4,6 +4,11 @@
 
 <ul>
   {{#each model as |article|}}
-    {{article-tile article=article}}
+    {{article-tile article=article destroyArticle="destroyArticle" update="update"}}
   {{/each}}
 </ul>
+
+{{new-article save2="save3"}}
+
+
+{{#link-to 'index'}}Home{{/link-to}}

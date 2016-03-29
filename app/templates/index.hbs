@@ -4,13 +4,10 @@
 
 <ul>
   {{#each model as |article|}}
-    {{article-tile article=article}}
+  <li>{{article.author}} {{article.image}} {{article.title}}
+  <p><img src={{article.image}} alt={{article.title}} ></p>
+  </li>
   {{/each}}
 </ul>
 
-
-
-
-
-
-<!-- <li>{{article.author}} {{article.image}} {{article.title}}</li> -->
+{{#link-to 'admin'}}Admin{{/link-to}}
