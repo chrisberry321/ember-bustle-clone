@@ -4,6 +4,13 @@
 
 <ul>
   {{#each model as |article|}}
-    <li>{{article.author}} {{article.image}} {{article.title}}</li>
+    {{article-tile article=article}}
   {{/each}}
 </ul>
+
+
+
+
+
+
+<!-- <li>{{article.author}} {{article.image}} {{article.title}}</li> -->
